@@ -1,6 +1,9 @@
 # Dependency directory
 node_modules
 
+# Apple file system
+.DS_Store
+
 # Logs
 logs
 *.log
