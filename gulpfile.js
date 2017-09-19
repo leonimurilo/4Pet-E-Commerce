@@ -6,8 +6,8 @@ const babel = require("babelify");
 const source = require("vinyl-source-stream");
 const fs = require('fs');
 
-const appPath = "client/src/index.js";
-const distPath = "./client/public/";
+const appPath = "client/src/app.js";
+const distPath = "./client/public/dist";
 const bundleName = "bundle.js";
 
 function compile(watch) {
