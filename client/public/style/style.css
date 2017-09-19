@@ -67,13 +67,18 @@ html,body, #app {
     color: #23bfe3 !important;
 }
 
-.nav-item > a > img{
-    width: 28px;
-}
-
 .nav-item-right{
     margin-left: auto;
     margin-right: 5px;
+}
+
+.logo{
+    width: 22px;
+    transition: all 300ms ease;
+}
+
+.logo:hover{
+    transform: rotate(-15deg);
 }
 
 #dynamic-content {

@@ -9,12 +9,15 @@ class NavigationBar extends Component {
         super(props);
     }
 
+    // 3 types:
+    // 1. unlogged buyer 2. logged buyer 3. logged seller
+
     render(){
         return(
             <div id="navigation-bar">
                 <div className="nav-item">
                     <NavLink exact to="/" activeClassName="nav-item-active">
-                        Home
+                        <img className="logo" src="/assets/logo.svg"/>
                     </NavLink>
                 </div>
                 <div className="nav-item" >
@@ -23,8 +26,8 @@ class NavigationBar extends Component {
                     </NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to="/Cart" activeClassName="nav-item-active">
-                        Cart
+                    <NavLink to="/Purchases" activeClassName="nav-item-active">
+                        My Purchases
                     </NavLink>
                 </div>
                 <div className="nav-item">
