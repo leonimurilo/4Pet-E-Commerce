@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import {NavLink} from "react-router-dom";
 
-import ProfileNavItem from "./navBarItems/ProfileNavItem";
+// import ProfileNavItem from "./navBarItems/ProfileNavItem";
 
 class NavigationBar extends Component {
     constructor(props){
@@ -27,7 +27,12 @@ class NavigationBar extends Component {
                         Cart
                     </NavLink>
                 </div>
-                <ProfileNavItem/>
+                <div className="nav-item">
+                    <NavLink to="/Profile" activeClassName="nav-item-active">
+                        Profile
+                    </NavLink>
+                </div>
+                {/*<ProfileNavItem/>*/}
             </div>
 
         );

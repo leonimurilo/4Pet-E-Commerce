@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 
 import Catalog from "./Catalog";
 import Profile from "./Profile";
+import Cart from "./Cart";
 
 class DynamicContent extends Component {
     constructor(props){
@@ -13,8 +14,10 @@ class DynamicContent extends Component {
         return (
             <div id="dynamic-content">
                 <Switch>
-                    <Route exact path="/" component={Catalog}/>
-                    <Route path="/chat" component={Profile}/>
+                    {/*<Route exact path="/" component={Catalog}/>*/}
+                    <Route path="/cart" component={Cart}/>
+                    <Route path="/profile" component={Profile}/>
+                    <Route path="/" component={Catalog}/>
                 </Switch>
             </div>
         );
