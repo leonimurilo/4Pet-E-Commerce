@@ -11,7 +11,7 @@ import reducers from "./reducers";
 const createStoreWithMiddleware = applyMiddleware(ReduxThunk)(createStore);
 
 ReactDOM.render(
-    <Provider store={createStoreWithMiddleware(state => state)}>
+    <Provider store={createStoreWithMiddleware(reducers)}>
         <App />
     </Provider>
     , document.querySelector('#app'));

@@ -41,7 +41,7 @@ html,body, #app {
     display: flex;
     flex-wrap: wrap;
     background-color: #313131;
-    padding: 6px 6px 6px 50px;
+    padding: 6px 50px 6px 50px;
     box-shadow: 0 0 5px rgba(57,70,78,.2);
 }
 
